@@ -1061,12 +1061,84 @@ footer .contact-form button.filled-button:hover {
 	color: #fff;
 }
 
+
+
+.page-heading-philo {
+	text-align: center;
+	background-image: url(../images/philo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px 0px 150px 0px;
+	color: #fff;
+}
+.page-heading-num {
+	text-align: center;
+	background-image: url(../images/number.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px 0px 150px 0px;
+	color: #fff;
+}
+
+.page-heading-team {
+	text-align: center;
+	background-image: url(../images/team.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px 0px 150px 0px;
+	color: #fff;
+}
+
+
 .page-heading h1 {
 	text-transform: capitalize;
 	font-size: 36px;
 	font-weight: 700;
 	letter-spacing: 2px;
 	margin-bottom: 18px;
+}
+
+.page-heading-num h1 {
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+}
+
+.page-heading-philo h1 {
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+}
+
+.page-heading-team h1 {
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+}
+
+.page-heading-num h1 {
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+}
+
+.page-heading-num span {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
 }
 
 .page-heading span {
@@ -1076,44 +1148,71 @@ footer .contact-form button.filled-button:hover {
 	color: #fff;
 	display: block;
 }
+.page-heading-philo span {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+}
 
+.page-heading-team span {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+}
 
 /* team */
 
 .team {
 	background-color: #f7f7f7;
-	margin-top: 140px;
-	margin-bottom: -140px;
-	padding: 120px 0px;
+	margin-top: 180px;
+	margin-bottom: -180px;
+	padding: 180px 180px;
 }
 
-.team-item img {
-	width: 100%;
-	overflow: hidden;
+
+
+
+
+.our-team{
+    text-align: center;
+    padding: 20px 15px 30px;
+    background: #fff;
+	margin-bottom: 100px;
+
+}
+.our-team .pic{
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    
 }
 
-.team-item .down-content {
-	background-color: #fff;
-	padding: 30px;
+.pic img{
+    width: 100%;
+    /* height: auto; */
+    border-radius:50%;
 }
-
-.team-item .down-content h4 {
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: 0.25px;
-	margin-bottom: 10px;
+.our-team .title{
+    font-weight: 600;
+    color: #2e282a;
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 7px 0;
 }
-
-.team-item .down-content span {
-	color: #a4c639;
-	font-weight: 600;
-	font-size: 14px;
-	display: block;
-	margin-bottom: 15px;
-}
-
-.team-item .down-content p {
-	margin-bottom: 20px;
+.our-team .post{
+    color: #17bebb;
+    text-transform: capitalize;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 
 
