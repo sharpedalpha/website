@@ -674,7 +674,7 @@ ul.slick-dots {
 }
 
 .more-info .left-image img {
-	width: 100%;
+	width: 80%;
 	overflow: hidden;
 }
 
@@ -1276,6 +1276,13 @@ footer .contact-form button.filled-button:hover {
 .our-team .post{
     color: #17bebb;
     text-transform: capitalize;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.our-team .email{
+    color: #17bebb;
     display: block;
     font-size: 15px;
     margin-bottom: 15px;
