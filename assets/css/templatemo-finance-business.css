@@ -67,7 +67,34 @@ a.border-button:hover {
 	color: #a4c639;
 }
 
+.section-heading-filo {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.section-heading-filo h2 {
+	font-size: 36px;
+	font-weight: 1000;
+	color: #1e1e1e;
+}
+
+.section-heading-filo em {
+	font-style: normal;
+	color: #a4c639;
+}
+
+.section-heading-filo span {
+	display: block;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #666;
+	letter-spacing: 1px;
+}
+
 .section-heading {
+	
 	text-align: center;
 	margin-bottom: 80px;
 }
@@ -1174,8 +1201,47 @@ footer .contact-form button.filled-button:hover {
 }
 
 
-
-
+.slidecontainer {
+	width: 50%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 15px;
+	border-radius: 5px;  
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%; 
+	background: #04AA6D;
+	cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #04AA6D;
+	cursor: pointer;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+ 
 
 .our-team{
     text-align: center;
