@@ -1119,6 +1119,16 @@ footer .contact-form button.filled-button:hover {
 	color: #fff;
 }
 
+.page-heading-contact {
+	text-align: center;
+	background-image: url(../images/contact.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px 0px 150px 0px;
+	color: #fff;
+}
+
 
 .page-heading h1 {
 	text-transform: capitalize;
@@ -1160,6 +1170,14 @@ footer .contact-form button.filled-button:hover {
 	margin-bottom: 18px;
 }
 
+.page-heading-contact h1 {
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+}
+
 .page-heading-num span {
 	font-size: 15px;
 	text-transform: uppercase;
@@ -1175,7 +1193,23 @@ footer .contact-form button.filled-button:hover {
 	color: #fff;
 	display: block;
 }
+
+.page-heading-contact span {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+}
 .page-heading-philo span {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+}
+
+.page-heading-contact span {
 	font-size: 15px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
