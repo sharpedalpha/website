@@ -89,7 +89,8 @@
               <li><a href='#tabs-1'>Tactical Asset Allocation <i class="fa fa-angle-right"></i></a></li>
               <li><a href='#tabs-2'>Portfolio Construction <i class="fa fa-angle-right"></i></a></li>
               <li><a href='#tabs-3'>Past Returns Analysis <i class="fa fa-angle-right"></i></a></li>
-              <!-- <li><a href='#tabs-4'>Backtesting<i class="fa fa-angle-right"></i></a></li> -->
+              <li><a href='#tabs-4'>Performance First Mounth<i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-5'>Rebalancing on the Swiss Market<i class="fa fa-angle-right"></i></a></li>
             </ul>
           </div>
           <div class="col-md-8">
@@ -130,11 +131,52 @@
                 
 
               </article>
-              <!-- <article id='tabs-4'>
-                <img src="assets/images/single_service_04.jpg" alt="">
-                <h4>Backtesting</h4>
 
-              </article> -->
+              <article id='tabs-4'>
+                <h4>Performance First Mounth</h4>
+                
+                After one month our portfolio has achieved a performance of 1.6%, which is quite close to the benchmark consisting solely of the S&P 500 which has performed a 2% of return. <br>
+                If we look at the month as a whole, we can see that on average almost every day our portfolio outperformed the benchmark, so we think that even without the rebalancing in the second round our portfolio would most likely be back above the bench.
+                <br> <br> Analyzing individual assets, however, we can notice that the majority of individual stocks (only BLDR and WFG have a positive return at the end of the month) and Bitcoin did very well until mid-month and then fell back towards the end of the month.
+                Asian bonds were down from the start but were slowly but steadily climbing, after the progressive improvement in the expectations of an intervention of the Chinese government in the crisis of Evergrande.
+                <br><br>In contrast, gold, REITs, TIPS, and the S&P 500, were bullish from the outset and maintained that trend until the end.
+                <br>If we look at the assets that have provided us with the biggest gains, the BLDR stock is up 20%, giving us a gain of about 1.2 million dollars on our weighting in this stock, followed by the S&P ETF which is up 3.5%, giving us a profit of 0.8 million dollars.
+                <br>In terms of losses, the biggest was the BTE stock, which depreciated by about 10%, causing us to lose 0.65 million dollars, followed by the OVV stock, which fell by 12%, causing us to lose 0.5 million dollars.
+                <br><br>Summing up, our portfolio return has been consistent over the whole period, without suffering from extensive losses anytime. According to Bloomberg, in the last month, the Sharpe Ratio of our portfolio was 0.69. Considering an annual projection of this number in python we get a Sharpe Ratio of 2.49 which is very close to the last 12 months Sharpe Ratio of the benchmark (the S&P 500 index had a rolling 12-month Sharpe Ratio around 2.64).
+                However, given our particular asset allocation, to see an outperform in the sharpe ratio we have to consider the coming months in which our assets could express their hidden potential and obtain abnormal returns that would overcome volatility and therefore increase the sharpe ratio.
+
+                <br><br>
+                <img src="assets/images/single_service_04.jpg" alt="">
+              </article>
+
+            </article>
+
+            <article id='tabs-5'>
+              <h4>Rebalancing on the Swiss Market</h4>
+              
+              To select the swiss stocks from the equity insights platform we first created a screening that was filtering the whole sample according to the following criteria:
+              <br>- Stocks that are listed in Switzerland only.
+              <br>- Company Investment grade on the platform greater or equal than “B”.
+              <br>- Consistent Economic Margin at time 0.
+              <br>- Economic margin forecast growth at 1 year greater than 0 (EM1-EM0 change).
+              <br>- Economic Margin forecast 1-year monthly momentum (month over month change in the 1 year out
+                                Economic Margin due to the changes in the 1 year out EPS estimates).
+                                <br>- Target price at least 5% above the current price.
+                                <br>- Positive Cash Flow growth 1-year projection.
+
+              <br><br> If you are interested in learning more about each of our stocks, here is a detailed report with the performance of the first month and the rebalancing for the second.
+              <br><a href="./files/1.pdf" download="SharpedAlpha">Download the SharpedAlpha report</a>
+              <br><br>After applying these screenings we decided to use the equityinsights.com optimization algorithm to modify our allocation.
+              <br>The optimization was aimed at achieving sector diversification (in line with our macroeconomic analysis and only consider Value or GARP (Growth At a Reasonable Price) investments. 
+              <br><br>
+              We used the same optimization algorithm from first mounth however, we decided to add additional constraints to the optimization, in order to give more weight to our fundamental analysis (key of this part of the challenge). Every stock selected from Equity Insights had to have a minimum weight of 2%, we also changed the weight of gold, Asia HY and TIPS to reduce our exposure on these assets and constrained the SP500 to a percentage lower than 30%.
+               
+              <br>The resulting weights are as follow:
+             
+              <br><br>
+              <img src="assets/images/single_service_05.jpg" alt="">
+            </article>
+            
             </section>
           </div>
         </div>
