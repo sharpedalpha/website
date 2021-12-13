@@ -89,8 +89,10 @@
               <li><a href='#tabs-1'>Tactical Asset Allocation <i class="fa fa-angle-right"></i></a></li>
               <li><a href='#tabs-2'>Portfolio Construction <i class="fa fa-angle-right"></i></a></li>
               <li><a href='#tabs-3'>Past Returns Analysis <i class="fa fa-angle-right"></i></a></li>
-              <li><a href='#tabs-4'>Performance First Mounth<i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-4'>Performance First Month<i class="fa fa-angle-right"></i></a></li>
               <li><a href='#tabs-5'>Rebalancing on the Swiss Market<i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-6'>Performance Second Month<i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-7'>Rebalancing on ETFs Market<i class="fa fa-angle-right"></i></a></li>
             </ul>
           </div>
           <div class="col-md-8">
@@ -133,7 +135,7 @@
               </article>
 
               <article id='tabs-4'>
-                <h4>Performance First Mounth</h4>
+                <h4>Performance First month</h4>
                 
                 After one month our portfolio has achieved a performance of 1.6%, which is quite close to the benchmark consisting solely of the S&P 500 which has performed a 2% of return. <br>
                 If we look at the month as a whole, we can see that on average almost every day our portfolio outperformed the benchmark, so we think that even without the rebalancing in the second round our portfolio would most likely be back above the bench.
@@ -142,7 +144,7 @@
                 <br><br>In contrast, gold, REITs, TIPS, and the S&P 500, were bullish from the outset and maintained that trend until the end.
                 <br>If we look at the assets that have provided us with the biggest gains, the BLDR stock is up 20%, giving us a gain of about 1.2 million dollars on our weighting in this stock, followed by the S&P ETF which is up 3.5%, giving us a profit of 0.8 million dollars.
                 <br>In terms of losses, the biggest was the BTE stock, which depreciated by about 10%, causing us to lose 0.65 million dollars, followed by the OVV stock, which fell by 12%, causing us to lose 0.5 million dollars.
-                <br><br>Summing up, our portfolio return has been consistent over the whole period, without suffering from extensive losses anytime. According to Bloomberg, in the last month, the Sharpe Ratio of our portfolio was 0.69. Considering an annual projection of this number in python we get a Sharpe Ratio of 2.49 which is very close to the last 12 months Sharpe Ratio of the benchmark (the S&P 500 index had a rolling 12-month Sharpe Ratio around 2.64).
+                <br><br>Summing up, our portfolio return has been consistent over the whole period, without suffering from extensive losses anytime. According to Bloomberg, in the last month, the Sharpe Ratio of our portfolio was 0.59. Considering an annual projection of this number in python we get a Sharpe Ratio of 2.04 which is very close to the last 12 months Sharpe Ratio of the benchmark (the S&P 500 index had a rolling 12-month Sharpe Ratio around 2.64).
                 However, given our particular asset allocation, to see an outperform in the sharpe ratio we have to consider the coming months in which our assets could express their hidden potential and obtain abnormal returns that would overcome volatility and therefore increase the sharpe ratio.
 
                 <br><br>
@@ -165,17 +167,52 @@
                                 <br>- Positive Cash Flow growth 1-year projection.
 
               <br><br> If you are interested in learning more about each of our stocks, here is a detailed report with the performance of the first month and the rebalancing for the second.
-              <br><a href="./files/1.pdf" download="SharpedAlpha">Download the SharpedAlpha report</a>
+              <br><a href="./files/1.pdf" download="SharpedAlpha_November">Download the SharpedAlpha report</a>
               <br><br>After applying these screenings we decided to use the equityinsights.com optimization algorithm to modify our allocation.
               <br>The optimization was aimed at achieving sector diversification (in line with our macroeconomic analysis and only consider Value or GARP (Growth At a Reasonable Price) investments. 
               <br><br>
-              We used the same optimization algorithm from first mounth however, we decided to add additional constraints to the optimization, in order to give more weight to our fundamental analysis (key of this part of the challenge). Every stock selected from Equity Insights had to have a minimum weight of 2%, we also changed the weight of gold, Asia HY and TIPS to reduce our exposure on these assets and constrained the SP500 to a percentage lower than 30%.
+              We used the same optimization algorithm from first month however, we decided to add additional constraints to the optimization, in order to give more weight to our fundamental analysis (key of this part of the challenge). Every stock selected from Equity Insights had to have a minimum weight of 2%, we also changed the weight of gold, Asia HY and TIPS to reduce our exposure on these assets and constrained the SP500 to a percentage lower than 30%.
                
               <br>The resulting weights are as follow:
              
               <br><br>
               <img src="assets/images/single_service_05.jpg" alt="">
             </article>
+
+            <article id='tabs-6'>
+              <h4>Performance Second Month</h4>
+
+              The new Omicron covid variant scared investors of the consistent probability of new lockdowns. 
+              <br>This spike in volatility led institutions to reduce their portfolio positions in the most volatile assets, which reflected mostly in our BTC holdings, with a loss close to 20%, which contributed to a net 1% loss in our portfolio.
+              <br><br>The worst-performing stocks were ARBN, MTG and SQN, three Swiss stocks that are in the Basic Material, Financial and Consumer Durable sectors. 
+              <br>ARBN suffered from the increase in basic material cost, which led the market to assume that their margins were going to reduce, leading to a dump of the stock price. We believe that MTG and SQN only had a temporary decrease, and suffered a bit more than the average Swiss market, we still do not consider them value traps, but we will however exit all these positions looking for better opportunities. 
+              <br><br>Gold also had a poor performance, which is probably due to the increasing fear of a more accentuated tapering, which could lead to an increase in interest rates to face inflation, this would increase the opportunity cost of owning gold rather than bonds and could have caused a temporary bad performance.
+              <br><br>The bad performance of our portfolio is mostly due to these drivers, since the other assets are positive or slightly negative, the final return of this round is -3.013%.
+              <br><br>These results bring our fund to an overall performance of -1.4% since the inception of the AMC (+1.6% in the first round and -3% in the second).
+              <br>In the following graph, we can see the annualised keymetrics and daily performance of our portfolio against the benchmark, highlighting the volatility spike starting on the first days of December that offset our portfolio from the benchmark.
+
+
+                <br><br>
+                <img src="assets/images/single_service_06.jpg" alt="">
+            </article>
+
+            <article id='tabs-7'>
+              <h4>Rebalancing on ETFs Market</h4>
+              
+              To recover from the losses we decided to change our investment approach for the upcoming round, allocating more weight of our portfolio in broadly diversified ETFs across sectors, countries and promising asset classes, and giving up the Swiss stocks that plunged our performance.
+              <br><br>In this round we decided to invest in sectorial ETFs to gain the benefit from our macroeconomic analysis, eliminating idiosyncratic risk while also achieving geographic diversification. For the Quantitative part of this round, we decided to pick US stocks with low market beta from promising sectors that emerged in the macroeconomic overview, meaning that we build some higher exposures in the stocks we consider particularly profitable rather than having only the ETF. The sectors we decided to overweight are Technology, Healthcare, Energy and Materials.
+              <br><br> If you are interested in learning more about the new rebalancing, here is a detailed report:
+              <br><a href="./files/2.pdf" download="SharpedAlpha_December">Download the SharpedAlpha report</a>
+
+
+              <br><br>We used the same optimization algorithm from phases 1 and 2 of the AMC however, in this part of the challenge, we decided to add additional constraints to the optimization, in order to give more weight to our macroeconomic and quantitative analysis (key of this part of the challenge). Every stock selected had to have a minimum weight of 1% and a maximum of 5%, whereas ETFs could range between 5% and 10%, with the exception of the S&P 500 which is part of our benchmark, free to range between 12% and 30%.
+
+              <br><br>The resulting weights are as follows:
+              <img src="assets/images/single_service_07.jpg" alt="">
+            </article>
+
+
+            
             
             </section>
           </div>
